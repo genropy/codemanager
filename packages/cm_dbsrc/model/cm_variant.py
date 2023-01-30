@@ -7,7 +7,7 @@ class Table(object):
         tbl=pkg.table('cm_variant', pkey='code', name_long='Variants', name_plural='Variants',caption_field='name')
         self.sysFields(tbl,id=False)
         tbl.column('code',size=':30',name_long='VariantCode')
-        tbl.column('project_code', size=':10', name_long='ProjectCode'
+        tbl.column('project_code', size=':20', name_long='ProjectCode'
                         ).relation('cm_project.code',relation_name='variants',
                                     onDelete='cascade',mode='foreignkey')
         tbl.column('name', size=':40', name_long='VariantName')

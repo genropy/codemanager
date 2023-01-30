@@ -14,7 +14,7 @@ class Table(object):
         tbl.column('name', name_long='Name')
         tbl.column('legacy_db',name_long='Legacy db')
         tbl.column('legacy_schema',name_long='Legacy schema')
-        tbl.column('cm_project',size=':10',name_long='Cm Project').relation('cm_project.code',mode='foreignkey',
+        tbl.column('cm_project',size=':20',name_long='Cm Project').relation('cm_project.code',mode='foreignkey',
                     relation_name='pkgvariants')
         tbl.column('cm_variant',size=':30',name_long='Cm variant').relation('cm_variant.code',
                         mode='foreignkey',

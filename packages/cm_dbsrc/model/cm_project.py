@@ -7,7 +7,7 @@ class Table(object):
     def config_db(self,pkg):
         tbl=pkg.table('cm_project', pkey='code', name_long='Project', name_plural='Projects',caption_field='name')
         self.sysFields(tbl,id=False)
-        tbl.column('code', size=':10', name_long='ProjectCode',validate_notnull=True)
+        tbl.column('code', size=':20', name_long='ProjectCode',validate_notnull=True)
         tbl.column('name', size=':40', name_long='ProjectDescription')
         #tbl.column('repository_code',size='22', group='_', name_long=''
         #            ).relation('', relation_name='', mode='foreignkey', onDelete='raise')
