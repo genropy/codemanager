@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<GenRoBag>
+	<db dbname="codemanager"/>
+	<packages>
+		<gnrcore_sys pkgcode="gnrcore:sys"/>
+		<gnrcore_adm pkgcode="gnrcore:adm"/>
+		<cm_dbsrc/>
+	</packages>
+	<authentication pkg="gnrcore:sys">
+		<py_auth defaultTags="user" pkg="adm" method="authenticate"/>
+	</authentication>
+	<site>
+		<wsgi/>
+	</site>
+	<menu package="*"/>
+</GenRoBag>

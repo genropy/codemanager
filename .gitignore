@@ -48,3 +48,5 @@ Thumbs.db
 *.mov
 *.wmv
 
+instances/codemanager/site/_static/*
+instances/codemanager/site/data/_users/*
